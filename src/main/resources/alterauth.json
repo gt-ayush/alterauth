@@ -1,0 +1,20 @@
+{
+    "configVersion": 1,
+    "debugMode": false,
+    "preventFallbackIfPlayerExists": false,
+    "providers": [
+        {
+            "name": "Mojang",
+            "checkUrl": "https://sessionserver.mojang.com/session/minecraft/hasJoined",
+            "profileUrl": "https://api.minecraftservices.com/minecraft/profile/lookup/name/",
+            "profilesUrl": "https://api.minecraftservices.com/minecraft/profile/lookup/bulk/byname"
+        },
+        {
+            "name": "Ely.by",
+            "checkUrl": "https://authserver.ely.by/session/hasJoined",
+            "profileUrl": "https://authserver.ely.by/api/users/profiles/minecraft/",
+            "profilesUrl": "https://authserver.ely.by/api/profiles/minecraft",
+            "propertyUrl": "http://skinsystem.ely.by/textures/signed/{0}"
+        }
+    ]
+}
